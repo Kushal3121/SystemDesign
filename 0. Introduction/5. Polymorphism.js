@@ -11,31 +11,59 @@
 //     - Different classes can define the same method in their own way.
 //     - When you call the method, the correct version is picked based on the object.
 
-class Animal {
-  constructor(name) {
-    this.name = name;
+// No inheritance needed - just same method names
+class Dog {
+  makeSound() {
+    return 'Woof! Woof!';
   }
 
-  speak() {
-    return `${this.name} makes a sound`;
-  }
-}
-
-class Dog extends Animal {
-  speak() {
-    return `${this.name} barks`;
+  move() {
+    return 'Running on four legs';
   }
 }
 
-class Cat extends Animal {
-  speak() {
-    return `${this.name} meows`;
+class Cat {
+  makeSound() {
+    return 'Meow! Meow!';
+  }
+
+  move() {
+    return 'Sneaking silently';
   }
 }
 
-const animals = [new Dog('Buddy'), new Cat('Mittens')];
+class Duck {
+  makeSound() {
+    return 'Quack! Quack!';
+  }
 
-// Same method: different result based on object type
-animals.forEach((animal) => {
-  console.log(animal.speak());
-});
+  move() {
+    return 'Swimming and flying';
+  }
+}
+
+class Robot {
+  makeSound() {
+    return 'Beep! Boop!';
+  }
+
+  move() {
+    return 'Rolling on wheels';
+  }
+}
+
+// Polymorphic functions - work with any object that has these methods
+function animalActions(animal) {
+  console.log(`Sound: ${animal.makeSound()}`);
+  console.log(`Movement: ${animal.move()}`);
+}
+
+// Usage - "If it walks like a duck and quacks like a duck..."
+const creatures = [
+  new Dog(),
+  new Cat(),
+  new Duck(),
+  new Robot(), // Not even an animal, but has the same interface!
+];
+
+creatures.forEach((creature) => animalActions(creature));
