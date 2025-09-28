@@ -80,3 +80,18 @@ function renderUI(factory) {
 // Usage
 renderUI(new WinFactory()); // Windows UI
 renderUI(new MacFactory()); // Mac UI
+
+// When Abstract Factory is Useful
+//     - When you have families of related objects that must go together.
+//     - Examples:
+//         1. UI toolkits (Windows/Mac/Linux widgets).
+//         2. Theming (Dark theme vs Light theme components).
+//         3. Databases (SQL family vs NoSQL family of drivers).
+
+// When Abstract Factory is Overkill
+//     - If you only need one kind of object (like just a Button), Factory Method is enough.
+//     - If you don’t care about consistency between objects (mixing is fine), you don’t need Abstract Factory.
+
+// In short:
+//     - Factory Method = creates one object at a time.
+//     - Abstract Factory = creates a whole family of related objects.
