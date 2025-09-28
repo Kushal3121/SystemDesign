@@ -48,3 +48,35 @@ function renderUI(osType) {
 
 renderUI('windows');
 renderUI('mac');
+
+// Solution: Use Abstract Factory to encapsulate OS-specific logic
+// Factories
+class WinFactory {
+  createButton() {
+    return new WinButton();
+  }
+  createCheckbox() {
+    return new WinCheckbox();
+  }
+}
+
+class MacFactory {
+  createButton() {
+    return new MacButton();
+  }
+  createCheckbox() {
+    return new MacCheckbox();
+  }
+}
+
+// Client uses abstract factory
+function renderUI(factory) {
+  const button = factory.createButton();
+  const checkbox = factory.createCheckbox();
+  button.render();
+  checkbox.render();
+}
+
+// Usage
+renderUI(new WinFactory()); // Windows UI
+renderUI(new MacFactory()); // Mac UI
