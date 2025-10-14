@@ -18,7 +18,7 @@
 //     - Makes systems easier to use for clients.
 //     - Commonly used in large frameworks, SDKs, or APIs.
 
-// Problem:
+// Problem: Complex system with many components
 class Projector {
   on() {
     console.log('Projector ON');
@@ -70,7 +70,7 @@ function watchMovieWithoutFacade() {
 
 watchMovieWithoutFacade();
 
-// With Facade
+// Solution: Create a Facade to simplify interaction
 class HomeTheaterFacade {
   constructor() {
     this.projector = new Projector();
