@@ -1,3 +1,7 @@
+package parkinglot.model.entities;
+
+import parkinglot.model.enums.VehicleType;
+
 public class Vehicle {
     private final String plate;
     private final VehicleType type;
