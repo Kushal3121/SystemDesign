@@ -12,38 +12,45 @@ public class FirstAvailableSpotStrategy implements SpotAllocationStrategy {
 
     @Override
     public Optional<Spot> findSpot(Vehicle vehicle, List<Spot> spots) {
+        List<SpotType> preferredSpotTypes = getPreferredSpotTypes(vehicle);
 
-        // Find the first available spot that can accommodate the vehicle
-        for (Spot spot : spots) {
-            if (spot.isAvailable() && isCompatible(vehicle, spot)) {
-                return Optional.of(spot);
+        // Iterate through the preferred spot types and find the first available spot of that type.
+        for (SpotType preferredType : preferredSpotTypes) {
+            for (Spot spot : spots) {
+                if (spot.isAvailable() && spot.getType() == preferredType) {
+                    return Optional.of(spot);
+                }
             }
         }
 
         return Optional.empty();
     }
 
-    // Check if the vehicle can fit in the spot based on their types
-    private boolean isCompatible(Vehicle vehicle, Spot spot) {
-
-        VehicleType vehicleType = vehicle.getType();
-        SpotType spotType = spot.getType();
-
-        if (vehicleType == VehicleType.BIKE) {
-            return spotType == SpotType.BIKE
-                    || spotType == SpotType.COMPACT
-                    || spotType == SpotType.LARGE;
+    // This method defines the preferred spot types for each vehicle type.
+    private List<SpotType> getPreferredSpotTypes(Vehicle vehicle) {
+        
+        if (vehicle.getType() == VehicleType.BIKE) {
+            return List.of(
+                    SpotType.BIKE,
+                    SpotType.COMPACT,
+                    SpotType.LARGE
+            );
         }
 
-        if (vehicleType == VehicleType.CAR) {
-            return spotType == SpotType.COMPACT
-                    || spotType == SpotType.LARGE;
+        if (vehicle.getType() == VehicleType.CAR) {
+            return List.of(
+                    SpotType.COMPACT,
+                    SpotType.LARGE
+            );
         }
 
-        if (vehicleType == VehicleType.TRUCK) {
-            return spotType == SpotType.LARGE;
+        if (vehicle.getType() == VehicleType.TRUCK) {
+            return List.of(
+                    SpotType.LARGE
+            );
         }
 
-        return false;
+        return List.of();
     }
+
 }
