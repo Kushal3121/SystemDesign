@@ -1,6 +1,5 @@
 package parkinglot.model.entities;
 
-import parkinglot.model.enums.PaymentStatus;
 import parkinglot.model.enums.PaymentType;
 
 public class Payment {
