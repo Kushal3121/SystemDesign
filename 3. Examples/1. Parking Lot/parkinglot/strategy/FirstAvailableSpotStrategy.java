@@ -13,8 +13,8 @@ public class FirstAvailableSpotStrategy implements SpotAllocationStrategy {
     @Override
     public Optional<Spot> findSpot(Vehicle vehicle, List<Spot> spots) {
 
+        // Find the first available spot that can accommodate the vehicle
         for (Spot spot : spots) {
-
             if (spot.isAvailable() && isCompatible(vehicle, spot)) {
                 return Optional.of(spot);
             }
@@ -23,6 +23,7 @@ public class FirstAvailableSpotStrategy implements SpotAllocationStrategy {
         return Optional.empty();
     }
 
+    // Check if the vehicle can fit in the spot based on their types
     private boolean isCompatible(Vehicle vehicle, Spot spot) {
 
         VehicleType vehicleType = vehicle.getType();
