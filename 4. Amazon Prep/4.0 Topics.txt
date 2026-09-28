@@ -1,0 +1,322 @@
+# Amazon SDE Interview Prep — 20 Day Topic Map
+
+## 1. Coding / DSA — Highest Priority
+
+Main topics to prepare:
+
+* Arrays
+* Strings
+* Hash Maps / Hash Sets
+* Two Pointers
+* Sliding Window
+* Prefix Sum
+* Linked Lists
+* Stacks
+* Queues / Deques
+* Binary Search
+* Trees
+* Binary Search Trees
+* Heaps / Priority Queues
+* Graphs
+* BFS
+* DFS
+* Recursion
+* Backtracking
+* Intervals
+* Greedy
+* Dynamic Programming — basic/common patterns
+* Trie — basic
+* Union Find / DSU — basic
+* Time Complexity
+* Space Complexity
+
+### Coding Interview Skills
+
+For every problem, practice:
+
+* Understand and clarify the problem
+* Explain the brute-force approach
+* Find an optimized approach
+* Write syntactically correct code
+* Handle edge cases
+* Test the code manually
+* Explain time complexity
+* Explain space complexity
+
+---
+
+## 2. System Design / High-Level Design
+
+Main concepts:
+
+* Functional requirements
+* Non-functional requirements
+* API design
+* REST APIs
+* Load Balancing
+* Horizontal Scaling
+* Caching
+* Redis / distributed cache concepts
+* SQL vs NoSQL
+* Database Indexing
+* Replication
+* Sharding / Partitioning
+* Message Queues
+* Event-driven systems
+* Asynchronous processing
+* Rate Limiting
+* CDN
+* Object Storage
+* Fault Tolerance
+* High Availability
+* Reliability
+* Consistency
+* Eventual Consistency
+* CAP Theorem — basic understanding
+* Retry mechanisms
+* Exponential Backoff
+* Idempotency
+* Monitoring / Logging
+
+### Systems to Practice
+
+* URL Shortener
+* Notification System
+* Chat / Messaging System
+* Rate Limiter
+* File Storage System
+* E-commerce / Order System
+
+---
+
+## 3. Object-Oriented Design / LLD
+
+### OOP Concepts
+
+* Classes and Objects
+* Encapsulation
+* Abstraction
+* Inheritance
+* Polymorphism
+* Interfaces
+* Abstract Classes
+* Composition vs Inheritance
+
+### Design Principles
+
+* SOLID Principles — basic practical understanding
+
+### Common Design Patterns
+
+* Strategy
+* Factory
+* Observer
+* Builder
+* Singleton
+* Adapter
+* Decorator
+
+### LLD Problems
+
+* Parking Lot
+* Elevator
+* Library Management System
+* Amazon Locker
+* Shopping Cart
+* Notification System
+
+---
+
+## 4. CS Fundamentals
+
+### Databases
+
+* Relational Databases
+* SQL basics
+* Primary Key / Foreign Key
+* Joins
+* Indexes
+* Transactions
+* ACID
+* Normalization
+* Denormalization
+* SQL vs NoSQL
+
+### Operating Systems
+
+* Process vs Thread
+* Multithreading
+* Concurrency
+* Synchronization
+* Mutex / Locks
+* Deadlock — basic
+* Memory Management
+* Stack vs Heap
+* Virtual Memory
+* Paging — basic
+
+### Networking / Internet
+
+* DNS
+* HTTP / HTTPS
+* TCP vs UDP
+* TCP/IP basics
+* Client-Server architecture
+* Sockets — basic
+* What happens when you enter a URL in a browser?
+
+---
+
+## 5. Amazon Leadership Principles / Behavioral
+
+Prepare STAR stories for:
+
+* Customer Obsession
+* Ownership
+* Invent and Simplify
+* Are Right, A Lot
+* Learn and Be Curious
+* Hire and Develop the Best
+* Insist on the Highest Standards
+* Think Big
+* Bias for Action
+* Frugality
+* Earn Trust
+* Dive Deep
+* Have Backbone; Disagree and Commit
+* Deliver Results
+
+### Important Story Types
+
+Have examples for:
+
+* Biggest technical challenge
+* Failure / mistake
+* Conflict with teammate
+* Disagreement with manager
+* Tight deadline
+* Taking ownership
+* Improving a process
+* Solving an ambiguous problem
+* Finding a difficult bug
+* Handling customer impact
+* Going beyond your responsibility
+* Learning something quickly
+* Making a decision with incomplete information
+* Delivering under pressure
+
+---
+
+## 6. Programming Language — C++
+
+Review:
+
+* STL containers
+* `vector`
+* `string`
+* `unordered_map`
+* `unordered_set`
+* `map`
+* `set`
+* `stack`
+* `queue`
+* `deque`
+* `priority_queue`
+* Iterators
+* Sorting
+* Custom comparators
+* References
+* Pointers
+* Pass by value vs reference
+* Memory basics
+* Classes
+* Constructors
+* Inheritance
+* Polymorphism
+* Smart pointers — basic understanding
+
+---
+
+## 7. Resume / Project Deep Dive
+
+Be ready to explain:
+
+* Current work
+* Previous work experience
+* Important projects
+* Architecture decisions
+* Technical challenges
+* Trade-offs
+* Performance improvements
+* Bugs / failures
+* Scaling problems
+* Technologies used
+* Why a certain technology was chosen
+* What YOU specifically contributed
+* What you would improve if you rebuilt it
+
+---
+
+## 8. ML / AI — Role Dependent
+
+Only spend significant time here if the Amazon role specifically involves ML / AI.
+
+Basic topics:
+
+* Supervised vs Unsupervised Learning
+* Classification vs Regression
+* Train / Validation / Test split
+* Overfitting
+* Underfitting
+* Bias vs Variance
+* Precision / Recall / F1
+* Error Analysis
+* Feature Engineering
+* Statistical Significance
+* Model Evaluation
+* Data Quality
+* Data Leakage
+
+---
+
+# Priority Order
+
+For a 20-day preparation window:
+
+1. Coding / DSA
+2. Amazon Leadership Principles
+3. System Design
+4. Object-Oriented Design / LLD
+5. CS Fundamentals
+6. C++ Revision
+7. Resume / Project Deep Dive
+8. ML / AI — only if relevant
+
+---
+
+# Approximate 20-Day Allocation
+
+* Days 1–10: DSA
+* Days 11–14: System Design
+* Days 15–16: OOP / LLD
+* Days 17–18: CS Fundamentals + C++
+* Day 19: Resume + Behavioral
+* Day 20: Mock Interview + Final Revision
+
+Leadership Principle stories should be prepared gradually throughout the 20 days instead of leaving everything until Day 19.
+
+---
+
+# Final Goal
+
+By interview day, I should be able to:
+
+* Solve common medium-level DSA problems
+* Explain my thinking while coding
+* Write clean C++ without relying heavily on an IDE
+* Analyze time and space complexity
+* Design a scalable backend system at a high level
+* Design basic object-oriented systems
+* Explain DB, OS, and networking fundamentals
+* Answer Amazon behavioral questions using STAR
+* Defend every important technical point on my resume

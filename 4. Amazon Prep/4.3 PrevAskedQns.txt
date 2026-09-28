@@ -1,0 +1,28 @@
+DSA
+    1. Given a Binary tree return the sum of node values at each vertical level.
+    2. https://leetcode.com/problems/random-pick-with-weight/description/
+    3. https://leetcode.com/problems/most-profitable-path-in-a-tree/description/
+    4. Amazon is giving gift vouchers to its customers of X amount, users can use them to buy exactly 2 items at a time of combined price exact X. 
+       Give a list of products return 2 products that users should buy to utilize this voucher. [2 Sum]
+       4.1. Now if the user can use the voucher to buy 2 items that have the price sum of at most X. [2 Pointer]
+       4.2. Now if user can buy N number of products whose price sum can be at most X. [Subset sum DP kind of]
+    5. Implement LRU cache
+
+
+Leadership
+    1. Describe a time where you faced a deadline, how you handled it, what was the result, what was the feedback from manager, 
+       what was the impact of deadline on your work approach?
+    2. Describe a time where you did some work out of your area of responsibility, how did you do it, how much time it took, 
+       what was the impact of the work, technical details of the work?
+    3. LP questions in between the discussions like, tell about time during this project when you faced conflict and how did you resolve it, what was your managers 
+       reaction to your work, how do you validate your work, how did you made this particular decision was it data driver or intuition based etc.
+
+
+Resume + GenAI
+    1. Describe any one of your Resume projects in short.
+    2. How do you use GenAI in your workflow, what use cases you found in your projects/internships, how do you validate GenAI’s output for correctness.
+       LPs might also be asked in this round.
+    3. How well versed are you with GenAI in your workflows, what models you prefer, what is your workflow working with GenAI, how you choose tasks to give 
+       to GenAI, how you validate the models performance., any GenAI project that you build or used GenAI on your projects, how did you use it for what use case etc.
+
+
